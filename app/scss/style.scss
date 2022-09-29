@@ -45,7 +45,14 @@
         @extend %title-font;
         color: rgba(54, 56, 56, 0.9);
         line-height: 22px;
+
     }
+
+    &__list-link:hover {
+        color: $hover;
+        transition: 0.3s ease;
+    }
+
 
     &__list-link--active {
         padding-bottom: 4px;
@@ -77,6 +84,11 @@
 
     &__info {
         width: 540px;
+    }
+
+    .info-email:hover {
+        color: $hover;
+        transition: all 0.3s;
     }
 
     &__info-title {
@@ -147,6 +159,11 @@
         }
     }
 
+    &__social-link:hover {
+        color: $dark;
+        transition: all 0.3s;
+    }
+
     &__social-link--facebook::before {
         content: '';
         background-image: url(../images/facebook.svg);
@@ -196,6 +213,11 @@
         color: #707070;
     }
 
+    &__menu-link:hover {
+        color: $dark;
+        transition: all 0.3s;
+    }
+
 
     &__menu {
         width: 125px;
@@ -208,6 +230,7 @@
         text-align: center;
         padding: 42px 0 41px;
     }
+
 }
 
 .rightside-menu {
@@ -224,7 +247,8 @@
     transition: all .5s;
 
     &.rightside-menu--close {
-        transform: translateX(500%);
+        transform: translateX(200%);
+        display: none;
 
     }
 
@@ -309,6 +333,10 @@
     &__link {
         font-size: 14px;
         color: $default;
+    }
+    &__link:hover{
+        color:$hover;
+        transition: all 0.3s;
     }
 }
 
@@ -492,7 +520,7 @@
     mix-blend-mode: normal;
 
     &__content {
-        min-width: 731px;
+        max-width: 731px;
     }
 
     &__content-title {
@@ -616,7 +644,7 @@
     }
 
     &__btn {
-        margin: 0 13px;
+        margin: 0 13px 5px;
         background-color: transparent;
         border: 1px solid #454647;
         border-radius: 20px;
@@ -625,6 +653,11 @@
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
+    }
+
+    &__btn:hover {
+        border-color: #ffef35;
+        transition: all 0.3s;
     }
 
     .mixitup-control-active {
@@ -883,8 +916,9 @@
 // page contact start
 
 .map {
-    // margin-top: -53px;
+    background: rgba(223, 223, 223, .5);
     margin-bottom: 50px;
+
 
     iframe {
         height: 578px;
@@ -995,7 +1029,7 @@
 
 .contact-slider {
     padding-bottom: 102px;
-  
+
     &__link {
         display: block;
         position: relative;
@@ -1034,7 +1068,7 @@
         opacity: 0;
         padding: 0 5px;
         transition: all .5s;
-        
+
 
 
     }
@@ -1069,6 +1103,10 @@
     &__category-link {
         color: $title;
     }
+    &__category-link:hover{
+        color: $hover;
+        transition: all 0.3s;
+    }
 
     &__tags {
         margin-bottom: 50px;
@@ -1084,6 +1122,10 @@
         display: inline-block;
         border: 1px solid rgba(#454647, .5);
         border-radius: 14px;
+    }
+    &__tags-link:hover{
+        color: $dark;
+        transition: all 0.3s;
     }
 
     &__social {
@@ -1335,6 +1377,8 @@
         border-radius: 14px;
     }
 
+
+
     &__links {
         display: flex;
         align-items: center;
@@ -1404,7 +1448,7 @@
         font-weight: 400;
         font-size: 14px;
         color: #707070;
-       
+
     }
 
     &__comments-name {

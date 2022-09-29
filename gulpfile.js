@@ -12,7 +12,8 @@ function browsersync() {
 
     browserSync.init({
         server: {
-            baseDir: 'app/'
+            baseDir: 'app/',
+            online: true
         }
     });
 }

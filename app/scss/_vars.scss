@@ -1,11 +1,17 @@
 $title: #363838;
 $default: #5A5A5A;
+$hover:rgba(54, 56, 56, 0.6);
+$dark:rgba(0, 0, 0, 0.8);
+
+
 
 
 %title-font {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
+
 
 @media (max-width: 540px) {
     %title-font {
@@ -22,3 +28,5 @@ $default: #5A5A5A;
 @function min($number...) {
     @return m#{i}n(#{$numbers});
 }
+
+
